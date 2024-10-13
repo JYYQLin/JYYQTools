@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  	spec.name         = "JYTools"
+  	spec.name         = "JYYQTools"
   	spec.version      = "1.0.0"
   	spec.summary      = "本人封装的开发工具集合"
 
