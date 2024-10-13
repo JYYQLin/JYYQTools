@@ -38,6 +38,12 @@
 		2AF49E412CBBEFD600663FD5 /* JY_Json_Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E402CBBEFD600663FD5 /* JY_Json_Tool.swift */; };
 		2AF49E442CBBF03500663FD5 /* JY_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E432CBBF03500663FD5 /* JY_TextField.swift */; };
 		2AF49E462CBBF05800663FD5 /* TextField 说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AF49E452CBBF04B00663FD5 /* TextField 说明.md */; };
+		2AF49E492CBBF11900663FD5 /* JY_Base_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E482CBBF11900663FD5 /* JY_Base_Controller.swift */; };
+		2AF49E4B2CBBF13400663FD5 /* JY_Base_Loading_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E4A2CBBF13400663FD5 /* JY_Base_Loading_View.swift */; };
+		2AF49E4D2CBBF17400663FD5 /* JY_Enum_BaseController_Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E4C2CBBF16E00663FD5 /* JY_Enum_BaseController_Status.swift */; };
+		2AF49E4F2CBBF19C00663FD5 /* JY_Status_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E4E2CBBF19C00663FD5 /* JY_Status_View.swift */; };
+		2AF49E512CBBF1C000663FD5 /* BaseController 说明.md in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E502CBBF1B700663FD5 /* BaseController 说明.md */; };
+		2AF49E542CBBF5A300663FD5 /* JYTools.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AF49E522CBBF5A300663FD5 /* JYTools.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,12 @@
 		2AF49E402CBBEFD600663FD5 /* JY_Json_Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_Json_Tool.swift; sourceTree = "<group>"; };
 		2AF49E432CBBF03500663FD5 /* JY_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_TextField.swift; sourceTree = "<group>"; };
 		2AF49E452CBBF04B00663FD5 /* TextField 说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "TextField 说明.md"; sourceTree = "<group>"; };
+		2AF49E482CBBF11900663FD5 /* JY_Base_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_Base_Controller.swift; sourceTree = "<group>"; };
+		2AF49E4A2CBBF13400663FD5 /* JY_Base_Loading_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_Base_Loading_View.swift; sourceTree = "<group>"; };
+		2AF49E4C2CBBF16E00663FD5 /* JY_Enum_BaseController_Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_Enum_BaseController_Status.swift; sourceTree = "<group>"; };
+		2AF49E4E2CBBF19C00663FD5 /* JY_Status_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_Status_View.swift; sourceTree = "<group>"; };
+		2AF49E502CBBF1B700663FD5 /* BaseController 说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "BaseController 说明.md"; sourceTree = "<group>"; };
+		2AF49E532CBBF5A300663FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JYTools.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,7 @@
 				2A8D58A92CBBB71000195C72 /* Main.storyboard */,
 				2A8D58AA2CBBB71000195C72 /* SceneDelegate.swift */,
 				2A8D58AB2CBBB71000195C72 /* ViewController.swift */,
+				2AF49E522CBBF5A300663FD5 /* JYTools.strings */,
 			);
 			path = JYTools;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 		2A8D58C12CBBB98E00195C72 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2AF49E472CBBF10700663FD5 /* Controller */,
 				2AF49E422CBBF02400663FD5 /* TextField */,
 				2AF49E292CBBEF5D00663FD5 /* Extension */,
 				2AF49E1A2CBBEF5900663FD5 /* Localization */,
@@ -198,6 +212,18 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
+		2AF49E472CBBF10700663FD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AF49E502CBBF1B700663FD5 /* BaseController 说明.md */,
+				2AF49E4C2CBBF16E00663FD5 /* JY_Enum_BaseController_Status.swift */,
+				2AF49E482CBBF11900663FD5 /* JY_Base_Controller.swift */,
+				2AF49E4A2CBBF13400663FD5 /* JY_Base_Loading_View.swift */,
+				2AF49E4E2CBBF19C00663FD5 /* JY_Status_View.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +291,7 @@
 				2A8D58B02CBBB71000195C72 /* Assets.xcassets in Resources */,
 				2AF49E2A2CBBEF5D00663FD5 /* Extension 说明.md in Resources */,
 				2A8D58B22CBBB71000195C72 /* LaunchScreen.storyboard in Resources */,
+				2AF49E542CBBF5A300663FD5 /* JYTools.strings in Resources */,
 				2AF49E3E2CBBEF7800663FD5 /* Tool 说明.md in Resources */,
 				2A8D58B32CBBB71000195C72 /* Main.storyboard in Resources */,
 			);
@@ -280,12 +307,15 @@
 				2A8D58AD2CBBB71000195C72 /* AppDelegate.swift in Sources */,
 				2A8D58AE2CBBB71000195C72 /* SceneDelegate.swift in Sources */,
 				2AF49E1C2CBBEF5900663FD5 /* JY_Enum_Language.swift in Sources */,
+				2AF49E492CBBF11900663FD5 /* JY_Base_Controller.swift in Sources */,
 				2AF49E1D2CBBEF5900663FD5 /* JY_Localization_Tool.swift in Sources */,
 				2AF49E1E2CBBEF5900663FD5 /* JY_Localization_Tool_Extension.swift in Sources */,
 				2AF49E442CBBF03500663FD5 /* JY_TextField.swift in Sources */,
 				2AF49E2B2CBBEF5D00663FD5 /* JY_Date_Tool.swift in Sources */,
 				2AF49E2C2CBBEF5D00663FD5 /* JY_Extension_CommonCrypto.swift in Sources */,
 				2AF49E2D2CBBEF5D00663FD5 /* JY_Extension_Int.swift in Sources */,
+				2AF49E4D2CBBF17400663FD5 /* JY_Enum_BaseController_Status.swift in Sources */,
+				2AF49E4B2CBBF13400663FD5 /* JY_Base_Loading_View.swift in Sources */,
 				2AF49E2E2CBBEF5D00663FD5 /* JY_Extension_UIApplication.swift in Sources */,
 				2AF49E2F2CBBEF5D00663FD5 /* JY_Extension_UIColor.swift in Sources */,
 				2AF49E3A2CBBEF6100663FD5 /* JY_Device.swift in Sources */,
@@ -293,6 +323,7 @@
 				2AF49E412CBBEFD600663FD5 /* JY_Json_Tool.swift in Sources */,
 				2AF49E3C2CBBEF6100663FD5 /* JY_Extension_UIScreen.swift in Sources */,
 				2AF49E302CBBEF5D00663FD5 /* JY_Extension_UIFont.swift in Sources */,
+				2AF49E4F2CBBF19C00663FD5 /* JY_Status_View.swift in Sources */,
 				2AF49E312CBBEF5D00663FD5 /* JY_Extension_UIImage.swift in Sources */,
 				2AF49E322CBBEF5D00663FD5 /* JY_Extension_UIWindow.swift in Sources */,
 				2AF49E332CBBEF5D00663FD5 /* JY_FileManager_Tool.swift in Sources */,
@@ -300,6 +331,7 @@
 				2AF49E132CBBEF5700663FD5 /* JY_Sandbox_Tool.swift in Sources */,
 				2AF49E142CBBEF5700663FD5 /* JY_Sandbox_Tool_Cache.swift in Sources */,
 				2AF49E152CBBEF5700663FD5 /* JY_Sandbox_Tool_Path.swift in Sources */,
+				2AF49E512CBBF1C000663FD5 /* BaseController 说明.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +352,14 @@
 				2A8D58A82CBBB71000195C72 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AF49E522CBBF5A300663FD5 /* JYTools.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AF49E532CBBF5A300663FD5 /* en */,
+			);
+			name = JYTools.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

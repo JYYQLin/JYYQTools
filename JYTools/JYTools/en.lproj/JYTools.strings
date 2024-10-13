@@ -1,0 +1,13 @@
+/* 
+  JYTools.strings
+  JYTools
+
+  Created by 林君扬 on 2024/10/13.
+  
+*/
+
+"yq_no_internet_string" = "没有网络显示的文字";
+"yq_no_data_string" = "没有数据显示的文字";
+"yq_no_message_string" = "没有消息显示的文字";
+"yq_no_comment_string" = "没有对话显示的文字";
+"yq_no_internet_string" = "没有网络现实的文字";
