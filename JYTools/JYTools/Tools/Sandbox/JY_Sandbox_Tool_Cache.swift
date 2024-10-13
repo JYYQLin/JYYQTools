@@ -2,7 +2,7 @@
 //  JY_Sandbox_Tool_Cache.swift
 //  JYTools
 //
-//  Created by 林君扬 on 2024/10/13.
+//  Created by JYYQLin on 2024/10/13.
 //
 
 import UIKit
@@ -161,7 +161,7 @@ extension JY_Sandbox_Tool {
                 let fileAllPath = (folderPath as NSString).appendingPathComponent(filePath)
                 
                 //  计算文件大小
-                fileSize = fileSize + (yq_calculate_file_size(filePath: fileAllPath) ?? 0)
+                fileSize = fileSize + (yq_calculate_file_size(filePath: fileAllPath))
             }
             
             return completion(fileSize)
