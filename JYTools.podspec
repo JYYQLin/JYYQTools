@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   	spec.author       = { "JYYQLin" => "No mailBox" }
 
   	spec.source       = { :git => "https://github.com/JYYQLin/JYYQTools.git", :tag => spec.version }
-  	spec.source_files  = "JYTools/Tools/**/*.{h,m,swift}"
+  	spec.source_files  = "Tools/**/*.{h,m,swift}"
 
 	spec.swift_versions = ['5.0', '5.1', '5.2']
 

@@ -102,6 +102,7 @@
 		2A8D585F2CBBB65C00195C72 = {
 			isa = PBXGroup;
 			children = (
+				2A8D58C12CBBB98E00195C72 /* Tools */,
 				2A8D58AC2CBBB71000195C72 /* JYTools */,
 				2A8D58692CBBB65C00195C72 /* Products */,
 			);
@@ -118,7 +119,6 @@
 		2A8D58AC2CBBB71000195C72 /* JYTools */ = {
 			isa = PBXGroup;
 			children = (
-				2A8D58C12CBBB98E00195C72 /* Tools */,
 				2A8D58A32CBBB71000195C72 /* AppDelegate.swift */,
 				2A8D58A42CBBB71000195C72 /* Assets.xcassets */,
 				2A8D58A52CBBB71000195C72 /* Info.plist */,
