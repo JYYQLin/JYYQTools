@@ -20,6 +20,7 @@ extension ViewController {
         yq_content_view.addSubview(yq_view)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(yq_view_tap))
+        yq_view.addGestureRecognizer(tap)
     }
     
     override func yq_setNavigationBar() {
@@ -55,7 +56,7 @@ extension ViewController {
     override func yq_retry_request_click() {
         super.yq_retry_request_click()
         
-        let randomTime = arc4random_uniform(3)
+        let randomTime = arc4random_uniform(12)
         let randomTime2 = arc4random_uniform(randomTime)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(randomTime + randomTime2)) { [weak self] in
@@ -63,7 +64,6 @@ extension ViewController {
             self?.yq_controller_status = .yq_data_loaded
         }
     }
-    
 }
 
 
