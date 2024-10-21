@@ -40,3 +40,68 @@ extension TimeInterval {
         return JY_Date_Tool.yq_time_interval_since_now(to: self)
     }
 }
+
+
+public class JY_Time_Tool {
+    public static func timeAgoSinceDate(_ date: NSDate, currentDate: NSDate, numericDates: Bool) -> String {
+        let calendar = NSCalendar.current
+        let now = currentDate
+        let earliest = now.earlierDate(date as Date)
+        let latest = (earliest == now as Date) ? date : now
+        let components = calendar.dateComponents([.minute, .hour, .day, .weekOfYear, .month, .year, .second], from: earliest, to: latest as Date)
+
+        if (components.year! >= 2) {
+            return "\(components.year!)" + "Years ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.year! >= 1){
+            if (numericDates){
+                return "1" + "Years ago".yq_localized(tableName: "JY_Time_Tool")
+            } else {
+                return "Last year".yq_localized(tableName: "JY_Time_Tool")
+            }
+        } else if (components.month! >= 2) {
+            return "\(components.month!)" + "Months ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.month! >= 1){
+            if (numericDates){
+                return "1" + "Months ago".yq_localized(tableName: "JY_Time_Tool")
+            } else {
+                return "Last month".yq_localized(tableName: "JY_Time_Tool")
+            }
+        } else if (components.weekOfYear! >= 2) {
+            return "\(components.weekOfYear!)" + "Week ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.weekOfYear! >= 1){
+            if (numericDates){
+                return "1" + "Week ago".yq_localized(tableName: "JY_Time_Tool")
+            } else {
+                return "Last Week".yq_localized(tableName: "JY_Time_Tool")
+            }
+        } else if (components.day! >= 2) {
+            return "\(components.day!)" + "Days ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.day! >= 1){
+            if (numericDates){
+                return "1" + "Days ago".yq_localized(tableName: "JY_Time_Tool")
+            } else {
+                return "Yesterday".yq_localized(tableName: "JY_Time_Tool")
+            }
+        } else if (components.hour! >= 2) {
+            return "\(components.hour!)" + "Hours ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.hour! >= 1){
+            return "1" + "Hours ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.minute! >= 2) {
+            return "\(components.minute!)" + "Minutes ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.minute! >= 1){
+            return "1" + "Minutes ago".yq_localized(tableName: "JY_Time_Tool")
+        } else if (components.second! >= 3) {
+            return "\(components.second!)" + "Seconds ago".yq_localized(tableName: "JY_Time_Tool")
+        } else {
+            return "Just now".yq_localized(tableName: "JY_Time_Tool")
+        }
+    }
+
+    // 使用Unix时间戳转换成指定格式的方法
+    public static func yq_convert_timestamp_to_readableString(_ timestamp: TimeInterval) -> String {
+        let date = NSDate(timeIntervalSince1970: timestamp)
+        let now = NSDate()
+        return timeAgoSinceDate(date, currentDate: now, numericDates: true)
+    }
+
+}
