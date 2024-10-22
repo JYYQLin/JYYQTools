@@ -105,3 +105,17 @@ public class JY_Time_Tool {
     }
 
 }
+
+extension JY_Time_Tool {
+    static func yq_conversion_MMDD(time: TimeInterval, dateFormat: String = "MM-dd") -> String {
+        // 1.创建时间格式化对象
+        let fmt = DateFormatter()
+        fmt.locale = Locale(identifier: "en")
+        fmt.dateFormat = dateFormat
+        
+        let date = Date(timeIntervalSince1970: time)
+        
+        let timeStr = fmt.string(from: date)
+        return timeStr
+    }
+}
