@@ -54,7 +54,7 @@ public class JY_Time_Tool {
             return "\(components.year!)" + "Years ago".yq_localized(tableName: "JY_Time_Tool")
         } else if (components.year! >= 1){
             if (numericDates){
-                return "1" + "Years ago".yq_localized(tableName: "JY_Time_Tool")
+                return "1" + "Year ago".yq_localized(tableName: "JY_Time_Tool")
             } else {
                 return "Last year".yq_localized(tableName: "JY_Time_Tool")
             }
@@ -62,7 +62,7 @@ public class JY_Time_Tool {
             return "\(components.month!)" + "Months ago".yq_localized(tableName: "JY_Time_Tool")
         } else if (components.month! >= 1){
             if (numericDates){
-                return "1" + "Months ago".yq_localized(tableName: "JY_Time_Tool")
+                return "1" + "Month ago".yq_localized(tableName: "JY_Time_Tool")
             } else {
                 return "Last month".yq_localized(tableName: "JY_Time_Tool")
             }
@@ -78,18 +78,18 @@ public class JY_Time_Tool {
             return "\(components.day!)" + "Days ago".yq_localized(tableName: "JY_Time_Tool")
         } else if (components.day! >= 1){
             if (numericDates){
-                return "1" + "Days ago".yq_localized(tableName: "JY_Time_Tool")
+                return "1" + "Day ago".yq_localized(tableName: "JY_Time_Tool")
             } else {
                 return "Yesterday".yq_localized(tableName: "JY_Time_Tool")
             }
         } else if (components.hour! >= 2) {
             return "\(components.hour!)" + "Hours ago".yq_localized(tableName: "JY_Time_Tool")
         } else if (components.hour! >= 1){
-            return "1" + "Hours ago".yq_localized(tableName: "JY_Time_Tool")
+            return "1" + "Hour ago".yq_localized(tableName: "JY_Time_Tool")
         } else if (components.minute! >= 2) {
             return "\(components.minute!)" + "Minutes ago".yq_localized(tableName: "JY_Time_Tool")
         } else if (components.minute! >= 1){
-            return "1" + "Minutes ago".yq_localized(tableName: "JY_Time_Tool")
+            return "1" + "Minute ago".yq_localized(tableName: "JY_Time_Tool")
         } else if (components.second! >= 3) {
             return "\(components.second!)" + "Seconds ago".yq_localized(tableName: "JY_Time_Tool")
         } else {
