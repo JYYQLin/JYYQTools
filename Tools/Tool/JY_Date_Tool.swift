@@ -43,7 +43,7 @@ extension TimeInterval {
 
 
 public class JY_Time_Tool {
-    public static func timeAgoSinceDate(_ date: NSDate, currentDate: NSDate, numericDates: Bool) -> String {
+    public static func timeAgoSinceDate(_ timestamp: TimeInterval, _ date: NSDate, currentDate: NSDate, numericDates: Bool) -> String {
         let calendar = NSCalendar.current
         let now = currentDate
         let earliest = now.earlierDate(date as Date)
@@ -51,26 +51,28 @@ public class JY_Time_Tool {
         let components = calendar.dateComponents([.minute, .hour, .day, .weekOfYear, .month, .year, .second], from: earliest, to: latest as Date)
 
         if (components.year! >= 2) {
-            return "\(components.year!)" + "Years ago".yq_localized(tableName: "JY_Time_Tool")
+            
+            return JY_Time_Tool.yq_conversion_MMDD(time: timestamp, dateFormat: "yyyy-MM-dd HH:mm")
+            
         } else if (components.year! >= 1){
             if (numericDates){
-                return "1" + "Year ago".yq_localized(tableName: "JY_Time_Tool")
+                return JY_Time_Tool.yq_conversion_MMDD(time: timestamp, dateFormat: "MM-dd HH:mm")
             } else {
                 return "Last year".yq_localized(tableName: "JY_Time_Tool")
             }
         } else if (components.month! >= 2) {
-            return "\(components.month!)" + "Months ago".yq_localized(tableName: "JY_Time_Tool")
+            return JY_Time_Tool.yq_conversion_MMDD(time: timestamp, dateFormat: "MM-dd HH:mm")
         } else if (components.month! >= 1){
             if (numericDates){
-                return "1" + "Month ago".yq_localized(tableName: "JY_Time_Tool")
+                return JY_Time_Tool.yq_conversion_MMDD(time: timestamp, dateFormat: "MM-dd HH:mm")
             } else {
                 return "Last month".yq_localized(tableName: "JY_Time_Tool")
             }
         } else if (components.weekOfYear! >= 2) {
-            return "\(components.weekOfYear!)" + "Week ago".yq_localized(tableName: "JY_Time_Tool")
+            return JY_Time_Tool.yq_conversion_MMDD(time: timestamp, dateFormat: "MM-dd HH:mm")
         } else if (components.weekOfYear! >= 1){
             if (numericDates){
-                return "1" + "Week ago".yq_localized(tableName: "JY_Time_Tool")
+                return JY_Time_Tool.yq_conversion_MMDD(time: timestamp, dateFormat: "MM-dd HH:mm")
             } else {
                 return "Last Week".yq_localized(tableName: "JY_Time_Tool")
             }
@@ -101,7 +103,7 @@ public class JY_Time_Tool {
     public static func yq_convert_timestamp_to_readableString(_ timestamp: TimeInterval) -> String {
         let date = NSDate(timeIntervalSince1970: timestamp)
         let now = NSDate()
-        return timeAgoSinceDate(date, currentDate: now, numericDates: true)
+        return timeAgoSinceDate(timestamp, date, currentDate: now, numericDates: true)
     }
 
 }
