@@ -154,7 +154,7 @@ extension JY_Base_Controller {
         }else if yq_controller_status == .yq_data_loaded || yq_controller_status == .yq_default {
             yq_show_contentView()
             
-        }else if yq_controller_status == .yq_no_data || yq_controller_status == .yq_no_internet || yq_controller_status == .yq_no_message {
+        }else if yq_controller_status == .yq_no_data || yq_controller_status == .yq_no_internet || yq_controller_status == .yq_no_message || yq_controller_status == .yq_no_comment {
             
             yq_request_loading_view.yq_hidden_loading()
             yq_content_view.isHidden = true
