@@ -20,7 +20,7 @@ public class JY_Date_Tool {
             return (0, 0, 0, 0)
         }
         
-        return (days, hours, minutes, seconds)
+        return (days <= 0 ? 0 : days, hours <= 0 ? 0 : hours, minutes <= 0 ? 0 : minutes, seconds <= 0 ? 0 : seconds)
     }
 }
 
@@ -31,7 +31,6 @@ extension Int {
         return JY_Date_Tool.yq_time_interval_since_now(to: TimeInterval(self))
     }
 }
-
 
 extension TimeInterval {
     /** 转为（天，时，分，秒）的格式 */
