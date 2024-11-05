@@ -76,3 +76,29 @@ extension UIFont {
         return UIFont.init(name: "Chillax-Semibold", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
     }
 }
+
+extension UIFont {
+    public static func yq_D_DIN_PRO_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "D-DIN-PRO", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
+    
+    public static func yq_D_DIN_PRO_600_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "D-DIN-PRO-Semibold", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
+    }
+    
+    public static func yq_D_DIN_PRO_500_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "D-DIN-PRO-Medium", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
+    }
+    
+    public static func yq_D_DIN_PRO_700_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "D-DIN-PRO-Bold", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
+    }
+    
+    public static func yq_D_DIN_PRO_800_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "D-DIN-PRO-ExtraBold", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
+    }
+    
+    public static func yq_DIN_Condensed_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "DIN Condensed", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
+}
