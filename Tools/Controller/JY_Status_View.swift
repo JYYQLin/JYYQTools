@@ -84,7 +84,7 @@ extension JY_Status_View {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        yq_icon_imageView.frame.origin = {
+         yq_icon_imageView.frame.origin = {
             
             if yq_iconName == nil {
                 yq_icon_imageView.image = UIImage(named: yq_status_imageName(status: yq_status))
@@ -98,6 +98,8 @@ extension JY_Status_View {
             else{
                 yq_icon_imageView.frame.size = yq_iconSize!
             }
+            
+            yq_icon_imageView.contentMode = .scaleAspectFit
             
             return CGPoint(x: (frame.width - yq_icon_imageView.frame.width) * 0.5, y: (frame.height * 0.5 - yq_icon_imageView.frame.height))
         }()
