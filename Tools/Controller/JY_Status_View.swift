@@ -2,7 +2,7 @@
 //  JY_Status_View.swift
 //  JYTools
 //
-//  Created by JYTools on 2024/10/13.
+//  Created by JYYQLin on 2024/10/13.
 //
 
 import UIKit
@@ -114,7 +114,7 @@ extension JY_Status_View {
             
             
             if yq_statusTextColor == nil {
-                yq_status_label.textColor = UIColor(named: "yq_base_status_label_textColor")
+                yq_status_label.textColor = UIColor.yq_status_label_textColor()
             }
             else{
                 yq_status_label.textColor = yq_statusTextColor!

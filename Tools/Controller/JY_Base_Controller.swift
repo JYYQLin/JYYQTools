@@ -2,7 +2,7 @@
 //  JY_Base_Controller.swift
 //  JYTools
 //
-//  Created by JYTools on 2024/10/13.
+//  Created by JYYQLin on 2024/10/13.
 //
 
 import UIKit
@@ -121,7 +121,7 @@ extension JY_Base_Controller {
         
         yq_background_header_imageView.frame.origin = {
             yq_background_header_imageView.frame.size = CGSize(width: yq_background_content_view.frame.width, height: yq_background_content_view.frame.height)
-            yq_background_header_imageView.image = UIImage(named: "yq_baseController_bg_headerimage")
+            yq_background_header_imageView.image = UIImage.yq_controller_header_image()
             return .zero
         }()
     }
@@ -179,6 +179,6 @@ public extension JY_Base_Controller {
     }
     
     static func yq_background_color() -> UIColor? {
-        return UIColor(named: "yq_baseController_bgColor")
+        return UIColor.yq_controller_bgColor()
     }
 }

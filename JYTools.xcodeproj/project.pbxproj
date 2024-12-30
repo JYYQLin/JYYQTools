@@ -44,6 +44,7 @@
 		2AF49E4F2CBBF19C00663FD5 /* JY_Status_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E4E2CBBF19C00663FD5 /* JY_Status_View.swift */; };
 		2AF49E512CBBF1C000663FD5 /* BaseController 说明.md in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49E502CBBF1B700663FD5 /* BaseController 说明.md */; };
 		2AF49E542CBBF5A300663FD5 /* JYTools.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AF49E522CBBF5A300663FD5 /* JYTools.strings */; };
+		A117B5272D228E1500288513 /* JY_Controller_Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117B5262D228E1500288513 /* JY_Controller_Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		2AF49E4E2CBBF19C00663FD5 /* JY_Status_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_Status_View.swift; sourceTree = "<group>"; };
 		2AF49E502CBBF1B700663FD5 /* BaseController 说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "BaseController 说明.md"; sourceTree = "<group>"; };
 		2AF49E532CBBF5A300663FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JYTools.strings; sourceTree = "<group>"; };
+		A117B5262D228E1500288513 /* JY_Controller_Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JY_Controller_Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				2AF49E482CBBF11900663FD5 /* JY_Base_Controller.swift */,
 				2AF49E4A2CBBF13400663FD5 /* JY_Base_Loading_View.swift */,
 				2AF49E4E2CBBF19C00663FD5 /* JY_Status_View.swift */,
+				A117B5262D228E1500288513 /* JY_Controller_Config.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				2AF49E132CBBEF5700663FD5 /* JY_Sandbox_Tool.swift in Sources */,
 				2AF49E142CBBEF5700663FD5 /* JY_Sandbox_Tool_Cache.swift in Sources */,
 				2AF49E152CBBEF5700663FD5 /* JY_Sandbox_Tool_Path.swift in Sources */,
+				A117B5272D228E1500288513 /* JY_Controller_Config.swift in Sources */,
 				2AF49E512CBBF1C000663FD5 /* BaseController 说明.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
