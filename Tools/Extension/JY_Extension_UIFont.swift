@@ -18,6 +18,12 @@ extension UIFont {
 }
 
 extension UIFont {
+    public static func yq_Alimama_ShuHeiTi_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "Alimama ShuHeiTi", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
+}
+
+extension UIFont {
     public static func yq_din_font(_ fontSize: CGFloat) -> UIFont {
         return UIFont.init(name: "DIN Alternate", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
     }
@@ -78,23 +84,52 @@ extension UIFont {
 }
 
 extension UIFont {
+    public static func yq_Roboto_Medium_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "Roboto-Medium", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
+    
+    public static func yq_Roboto_Regular_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "Roboto-Regular", size: fontSize) ?? UIFont.init(name: "Roboto", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
+}
+
+extension UIFont {
     public static func yq_D_DIN_PRO_font(_ fontSize: CGFloat) -> UIFont {
         return UIFont.init(name: "D-DIN-PRO", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
     }
     
     public static func yq_D_DIN_PRO_600_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.yq_D_DIN_PRO_Semibold_font(fontSize)
+    }
+    //  600
+    public static func yq_D_DIN_PRO_Semibold_font(_ fontSize: CGFloat) -> UIFont {
         return UIFont.init(name: "D-DIN-PRO-Semibold", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
     }
     
+    //  500
     public static func yq_D_DIN_PRO_500_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.yq_D_DIN_PRO_Medium_font(fontSize)
+    }
+    
+    public static func yq_D_DIN_PRO_Medium_font(_ fontSize: CGFloat) -> UIFont {
         return UIFont.init(name: "D-DIN-PRO-Medium", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
     }
     
+    //  700
     public static func yq_D_DIN_PRO_700_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.yq_D_DIN_PRO_Bold_font(fontSize)
+    }
+    
+    public static func yq_D_DIN_PRO_Bold_font(_ fontSize: CGFloat) -> UIFont {
         return UIFont.init(name: "D-DIN-PRO-Bold", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
     }
     
+    // 800
     public static func yq_D_DIN_PRO_800_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.yq_D_DIN_PRO_ExtraBold_font(fontSize)
+    }
+    
+    public static func yq_D_DIN_PRO_ExtraBold_font(_ fontSize: CGFloat) -> UIFont {
         return UIFont.init(name: "D-DIN-PRO-ExtraBold", size: fontSize) ?? UIFont.yq_D_DIN_PRO_font(fontSize)
     }
     
