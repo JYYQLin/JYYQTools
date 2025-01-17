@@ -40,6 +40,10 @@ public class JY_Controller_Manager {
             print("log")
         }
     }
+
+    func yq_set_log(log: String) {
+        yq_log = log
+    }
     
 }
 
