@@ -21,6 +21,10 @@ extension UIFont {
     public static func yq_Alimama_ShuHeiTi_font(_ fontSize: CGFloat) -> UIFont {
         return UIFont.init(name: "Alimama ShuHeiTi", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
     }
+    
+    public static func yq_source_KeynoteartHans_font(_ fontSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "Source-KeynoteartHans", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
 }
 
 extension UIFont {
