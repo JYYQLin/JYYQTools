@@ -32,7 +32,7 @@ public class JY_Controller_Manager {
     open func yq_add_log(controllerName: String, status: String) {
         let time = yq_dateFormat()
         
-        let log = "time: " + time + " | " + "controllerName: " + controllerName + "status: " + status + "\n"
+        let log = "time: " + time + " | " + "controllerName: " + controllerName + " | "  + "status: " + status + "\n"
         
         yq_log = yq_log + log
         
