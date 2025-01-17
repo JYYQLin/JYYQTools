@@ -60,20 +60,22 @@ extension JY_Base_Controller {
         yq_setNavigationBar()
         
         yq_controller_status = .yq_default
-        
-        print("viewDidLoad" + String(format: "%@", self))
+
+        yq_controller_manager.yq_add_log(controllerName: "\(self)", status: "viewDidLoad")
     }
     
     override open func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         yq_setSubviewsFrame()
+        
+        yq_controller_manager.yq_add_log(controllerName: "\(self)", status: "viewWillLayoutSubviews")
     }
     
     override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        print("viewWillDisappear" + String(format: "%@", self))
+        yq_controller_manager.yq_add_log(controllerName: "\(self)", status: "viewWillDisappear")
     }
 }
 
