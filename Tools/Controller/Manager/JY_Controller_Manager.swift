@@ -21,7 +21,7 @@ public class JY_Controller_Manager {
     
     private init() {}
     
-    func jy_initialize_manager() {
+    open func jy_initialize_manager() {
         if yq_is_initialize == true {
             return
         }
@@ -29,7 +29,7 @@ public class JY_Controller_Manager {
         yq_is_initialize = true
     }
     
-    func yq_add_log(controllerName: String, status: String) {
+    open func yq_add_log(controllerName: String, status: String) {
         let time = yq_dateFormat()
         
         let log = "time: " + time + " | " + "controllerName: " + controllerName + "status: " + status + "\n"
@@ -41,7 +41,7 @@ public class JY_Controller_Manager {
         }
     }
 
-    func yq_set_log(log: String) {
+    open func yq_set_log(log: String) {
         yq_log = log
     }
     
