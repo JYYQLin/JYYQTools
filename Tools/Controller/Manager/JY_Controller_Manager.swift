@@ -44,7 +44,10 @@ public class JY_Controller_Manager {
     open func yq_set_log(log: String) {
         yq_log = log
     }
-    
+
+    open func yq_set(isDebug: Bool) {
+        yq_is_debug = isDebug
+    }
 }
 
 extension JY_Controller_Manager {
