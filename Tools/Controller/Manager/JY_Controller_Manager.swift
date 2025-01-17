@@ -37,7 +37,7 @@ public class JY_Controller_Manager {
         yq_log = yq_log + log
         
         if yq_is_debug == true {
-            print("log")
+            print(log)
         }
     }
 
