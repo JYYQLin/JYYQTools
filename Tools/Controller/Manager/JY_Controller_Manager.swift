@@ -7,7 +7,7 @@
 
 import UIKit
 
-let yq_controller_manager = JY_Controller_Manager.yq_shared
+public let yq_controller_manager = JY_Controller_Manager.yq_shared
 
 public class JY_Controller_Manager {
     
