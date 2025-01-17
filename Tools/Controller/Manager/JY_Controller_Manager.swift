@@ -1,8 +1,8 @@
 //
 //  JY_Controller_Manager.swift
-//  Scorpio
+//  JYYQTools
 //
-//  Created by One Lang on 2025/1/17.
+//  Created by JYYQLin on 2025/1/17.
 //
 
 import UIKit
